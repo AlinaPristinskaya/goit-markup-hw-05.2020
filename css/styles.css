@@ -623,13 +623,14 @@ ul.section-discription {
 }
 .flexemp {
   position: absolute;
+  display: flex;
   bottom: 0px;
+  justify-content: center;
+  align-items: center;
   right: 0px;
   left: 0px;
   height: 70px;
   margin-top: 0px;
-  padding-top: 27px;
-  padding-bottom: 27px;
   background-color: rgba(47, 48, 58, 0.8);
 
   font-family: Roboto;
