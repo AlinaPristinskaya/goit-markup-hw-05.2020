@@ -25,11 +25,13 @@ p {
 }
 .black {
   color: var(--black);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .black:hover,
 .black:focus {
   color: var(--accent);
-  transition: var(--timecubic);
 }
 .logo {
   margin-right: 93px;
@@ -39,12 +41,14 @@ p {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .logo:hover,
 .logo:focus {
   color: var(--black);
-  transition: var(--timecubic);
 }
 .list {
   list-style: none;
@@ -55,6 +59,8 @@ p {
 }
 .site-nav {
   display: flex;
+  justify-content: center;
+  padding-left: 0px;
 }
 .site-nav .item {
   margin-right: 50px;
@@ -73,11 +79,13 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent);
-  transition: var(--timecubic);
 }
 .site-nav .current {
   color: var(--accent);
@@ -92,22 +100,20 @@ p {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .telmailto:hover,
 .telmailto:focus {
   color: var(--accent);
   fill: var(--accent);
-  transition: var(--timecubic);
 }
 .envelope {
   margin-right: 10px;
   background-size: contain;
 }
-.hov:hover,
-.hov:focus {
-  fill: #2196f3;
-  transition: var(--timecubic);
-}
+
 .smartphone::before {
   content: "";
   background-image: url(../icon/smartphone.svg);
@@ -162,6 +168,9 @@ p {
   padding: 6px 22px;
   min-width: 73px;
   border: 0px;
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .button.primery {
   color: var(--white);
@@ -226,7 +235,6 @@ p {
 .button.portfolio:focus {
   color: var(--white);
   background-color: var(--accent);
-  transition: var(--timecubic);
 
   font-weight: 500;
   font-size: 16px;
@@ -260,6 +268,9 @@ p {
 }
 .white {
   color: var(--white);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .white:hover,
 .white:focus {
@@ -273,11 +284,13 @@ p {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .logofoot:hover,
 .logofoot:focus {
   color: var(--white);
-  transition: var(--timecubic);
 }
 .bgcolor {
   padding-top: 94px;
@@ -324,18 +337,11 @@ p {
 .flex-elem {
   margin-right: 30px;
   margin-bottom: 30px;
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
-.imgport:hover,
-.imgport:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: var(--timecubic);
-}
-.flex-elem:hover .imgportp,
-.flex-elem:focus .imgportp {
-  opacity: 1;
-  transition: var(--timecubic);
-}
+
 .flex-elem:nth-child(3n) {
   margin-right: 0px;
 }
@@ -343,10 +349,9 @@ p {
   margin-bottom: 0px;
 }
 
-.imgport {
+.imgportjpg {
   display: block;
   margin-right: 0px;
-  outline: none;
 }
 ul.site-nav.list.flex-container {
   padding-inline-start: 0px;
@@ -423,7 +428,7 @@ ul.section-discription {
 .section-discription .flexem:last-child {
   margin-right: 0px;
 }
-.site-nav .flexem:last-child {
+.site-nav .piople:last-child {
   margin-right: 0px;
 }
 .portfoliomain {
@@ -435,10 +440,6 @@ ul.section-discription {
 }
 .site-nav .filtr:last-child {
   margin-right: 0px;
-}
-.site-nav {
-  justify-content: center;
-  padding-left: 0px;
 }
 .logotip {
   margin-bottom: 20px;
@@ -513,19 +514,20 @@ ul.section-discription {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid;
-  border-color: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4%;
   width: 168px;
   height: 88px;
   color: #afb1b8;
   outline: none;
+  transition-property: color, border;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .svga:hover,
 .svga:focus {
   color: var(--accent);
-  border-color: var(--accent);
-  transition: var(--timecubic);
+  border: 1px solid #2196f3;
 }
 .socsetiicon {
   display: inline-flex;
@@ -536,6 +538,9 @@ ul.section-discription {
   align-items: center;
   border-radius: 50%;
   color: var(--color2, #afb1b8);
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .grey {
@@ -545,7 +550,6 @@ ul.section-discription {
 .socsetiicon:focus {
   background-color: var(--accent);
   color: var(--white);
-  transition: var(--timecubic);
 }
 .client {
   margin-right: 30px;
@@ -598,20 +602,24 @@ ul.section-discription {
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .footerbgicon:hover,
 .footerbgicon:focus {
   background-color: var(--accent);
-  transition: var(--timecubic);
 }
 .itemsvg {
   fill: currentColor;
   margin-right: 10px;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .itemsvg:hover,
 .itemsvg:focus {
   fill: var(--accent);
-  transition: var(--timecubic);
 }
 .flexemp {
   position: absolute;
@@ -636,10 +644,18 @@ ul.section-discription {
 .positionabs {
   position: relative;
   overflow: hidden;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.positionabs:hover .imgportp,
+.positionabs:focus .imgportp {
+  opacity: 1;
 }
 .imgportp {
   position: absolute;
   opacity: 0;
+  outline: none;
   bottom: 0px;
   top: 0px;
   left: 0px;
@@ -660,6 +676,8 @@ ul.section-discription {
 
   color: #ffffff;
   transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opasity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   position: fixed;
@@ -693,8 +711,19 @@ ul.section-discription {
   background-color: var(--accent);
   border-radius: 2px;
 }
-.positionabs:hover .imgportp,
-.positionabs:focus .imgportp {
+.imgport {
+  outline: none;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.flex-elem:hover,
+.flex-elem:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.imgport:hover .imgportp,
+.imgport:focus .imgportp {
   transform: translateY(0%);
-  transition: 300ms;
+  opacity: 1;
 }
