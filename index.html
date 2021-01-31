@@ -348,7 +348,7 @@
         <div class="conteiner">
            <div class="contact">
              
-                 <div class="footeradres">
+           <div class="footeradres">
                    <div class="logotip">
                    <a href="./index.html" class="logofoot">Web<span class="white">Studio</span></a>
                    </div>
@@ -359,7 +359,7 @@
                    <li class="adres"><a href="tel:" class="links">+38 096 111 11 11</a></li>
                    <li class="adres"><a href="mail:" class="links">info@devstudio.com</a></li>
                  </ul>
-            </div>
+             </div>
              <div class="footerlink">
                  <p class="join">ПРИСОЕДИНЯЙТЕСЬ</p>
                  <div>
@@ -400,13 +400,95 @@
                 </ul>
                  </div>
 
-            </div></div>
+            </div>
+            <div class="footersubscription">
+                
+                <form class="form">
+                    <div class="subscription">
+                        <label for="mail" class="script">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+                        <input type="email" name="mail" id="mail" placeholder="E-mail" class="inputmail" />
+                    </div>
+                 <div class="but">
+                   <button class="butmail">
+                       <span class="butmailspan">Подписаться</span>
+                       
+                       <svg width="24" height="24">
+                           <use href="./icon/spritehwsix.svg#airplane"></use>
+                       </svg>
+                   </button>
+                </div>
+                </form>
+                
+                
+            </div>
+        </div>
            </div>
         
        </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-modal-close >Закрыть</button>
+            <button data-modal-close  class="butclose" >
+                   <svg width="18" height="18"class="clos">
+                       <use href="./icon/spritehwsix.svg#close">
+                       </use>
+                   </svg>
+            </button>
+
+            <h1 class="modalzag">Оставьте свои данные, мы вам перезвоним</h1>
+            <form class="formmodal">
+                <div class="formtrans">
+                <div class="form-field">
+                    <svg width="12" height="12"class="iconmodal">
+                        <use href="./icon/spritehwsix.svg#man"></use>
+                    </svg>
+                    <input type="text" name="name" class="modalinput" id="name"/>
+                    <label for="name" class="modallab">Имя</label>
+                </div>   
+                </div>
+                <div class="formtrans">
+                <div class="form-field">
+                    <svg width="12" height="12" class="iconmodal">
+                        <use href="./icon/spritehwsix.svg#tube"></use>
+                    </svg>
+                    <input type="tel" name="tel" class="modalinput" id="tel"/>
+                    <label for="tel"class="modallab">Телефон</label>
+                    
+                </div>
+                </div>
+                <div class="formtrans">
+                <div class="form-field">
+                    <svg width="12" height="12" class="iconmodal">
+                        <use href="./icon/spritehwsix.svg#enveloplittle"></use>
+                    </svg>
+                    <input type="email" name="mail" class="modalinput" id="mail" />
+                    <label for="mail" class="modallab">Почта</label>
+                </div>
+                </div>
+                <div class="form-field">
+                    
+                    <textarea class="commentaries modalinput" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                    <label for="comment" class="modallab">Комментарий</label>
+                </div>
+                
+                <div class="form-field">
+                    <div class="chec">                    
+                    <label class="checpolicy">Соглашаюсь c рассылкой и принимаю 
+                        <a href="" class="contract">Условия договора</a>
+                        <input class="checbox" type="checkbox" name="policy" />
+                        <svg width="20" height="20" class="checsvg">
+                            <use href="./icon/spritehwsix.svg#check"></use>
+                        </svg>
+                     </label>                    
+                    
+                </div></div>
+            
+                <div class="cnopka">
+                <button class="butpolicy">
+                    <span class="butform">Отправить</span>               
+                </button>
+                </form>
+                </div>
+
         </div>
     </div>
     <script src="./modal.js"></script>
